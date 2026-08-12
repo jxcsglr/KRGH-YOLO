@@ -165,22 +165,3 @@ python -m compileall -q krgh_yolo experiments train.py validate.py predict.py
   (`0.1 * mAP50 + 0.9 * mAP50:95`) and is re-evaluated before summary export.
 - Model weights, datasets, and generated `runs/` directories are intentionally
   excluded from Git.
-
-## Publish to GitHub
-
-Create an empty repository named `KRGH-YOLO` on GitHub, then run the following
-commands from this directory:
-
-```bash
-git init
-git add .
-git commit -m "Initial KRGH-YOLO release"
-git branch -M main
-git remote add origin https://github.com/YOUR_ACCOUNT/KRGH-YOLO.git
-git push -u origin main
-```
-
-Before making the repository public, replace `YOUR_ACCOUNT`, add the paper's
-BibTeX entry when it is available, and choose an explicit software license. A
-license is deliberately not selected here because that legal choice belongs to
-the project authors.
